@@ -6,7 +6,7 @@ You can build your script easy!! This is like jQuery.
 
 `<script src="soruto_ejb.js"></script>`
 
-2.使いたい関数をWikiや同封のfunc_list.htmlから探し、コーディングする  
+2.使いたい関数を同封のfunc_list.htmlから探し、コーディングする  
 
     <html><head>  
     <script src="soruto_ejb.js"></script>  
@@ -18,5 +18,3 @@ You can build your script easy!! This is like jQuery.
     </script></head><body>  
     <input type="text" id="st">  
     </body></html>`
-
-なお、Wikiは[こちらから](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/wiki)ご覧いただけます
