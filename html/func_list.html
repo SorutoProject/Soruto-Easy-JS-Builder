@@ -5,4 +5,5 @@
 <p><b>So_cl(string)</b><br>console.log()と同じ働き。<br>e.g. So_cl("Hello World")//ブラウザコンソールにhello worldを表示
 <p><b>So_SetVal(id,string)</b><br>第1引数に指定されたidの要素のvalueに第2引数の文字列をセット<br>e.g. &lt;script&gt;So_SetVal("test","Hello World");//idがtestのinputのvalueをHello Worldにする<br>&lt;/script&gt;<br>&lt;input type="text" id="test"&gt;
 <p><b>So_GetVal(id)</b><br>引数に指定されたidのvalueの値を返します<br>e.g. &lt;script&gt;var st = SoGetVal("st");<br>So_al(st);//Hello!!がアラートに表示される&lt;/script&gt;<br>&lt;input type="text" value="Hello!!"&gt;
+<p><b>So_GetDT()</b><br>プレーンのDate()関数で取得できるデータを取得します<br>第０配列に年,第１配列に月,2に日,3に時,4に分,5に秒がそれぞれ入ります<br>e.g. var dd = So_getDT();So_al("只今、" dd[0] + "年" + dd[1] + "月" + dd[2] + "日、" + dd[3] + "時" + dd[4] + "分" + dd[5] + "秒です");//年月日と現在時刻をアラートする 
 </body></html>
