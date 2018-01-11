@@ -3,16 +3,30 @@
 *Please understand it.
 *(C)2018 Soruto Project.
 */
-function al(s){
+function So_al(s){
 alert(s);
 }
-function getId(s){
+function So_gId(s){
 var r = document.getElementById(s);
 return r;
 }
-function sIdValue(i,s){
-	var id = document.getElementById(i).value = s;
+function So_IdSetValue(i,s){
+	document.getElementById(i).value = s;
 }
-function cl(s){
+function So_IdGetValue(i){
+	var v = document.getElementById(i).value;
+	return v;
+}
+function So_cl(s){
 	console.log(s);
+}
+function S_getDT(){
+var dm = new Date();
+var da;//da変数を定義
+var da[0] = dm.getYear();
+var da[1] = dm.getMonth() + 1;
+var da[2] = dm.getDate();
+var da[3] = dm.getHours();
+var da[4] = dm.getMinutes();
+var da[5] = dm.getSeconds();
 }
