@@ -1,4 +1,4 @@
-<html><head><title>Soruto ESB test</title>
+<html><head><title>Soruto ESB test</title><meta charset="utf-8">
 <script src="../js/soruto_ejb.js"></script>
 <script>
 function run(){
@@ -6,7 +6,7 @@ So_al("Hello World!!");
 So_SetVal("hello","Hello World!!");
 So_cl("Hello World!!");
 var dd = So_getDT();
-So_al("只今、" dd[0] + "年" + dd[1] + "月" + dd[2] + "日、" + dd[3] + "時" + dd[4] + "分" + dd[5] + "秒です");
+So_al("只今、" + dd[0] + "年" + dd[1] + "月" + dd[2] + "日、" + dd[3] + "時" + dd[4] + "分" + dd[5] + "秒です");
 }
 </script>
 </head>
