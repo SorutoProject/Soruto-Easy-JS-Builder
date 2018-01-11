@@ -22,13 +22,14 @@ function So_cl(s){
 }
 function So_getDT(){
 var dm = new Date();
-var da;//da変数を定義
-var da[0] = dm.getYear();
-var da[1] = dm.getMonth() + 1;
-var da[2] = dm.getDate();
-var da[3] = dm.getHours();
-var da[4] = dm.getMinutes();
-var da[5] = dm.getSeconds();
+var ye = dm.getYear();
+var mo = dm.getMonth() + 1;
+var date= dm.getDate();
+var ho = dm.getHours();
+var min = dm.getMinutes();
+var sec = dm.getSeconds();
+var dat = ye + " " + mo + " " + date + " " + ho + " " + min + " " + sec;
+var da = dat.split(" ");
 return da;
 }
 function So_sub(n){
