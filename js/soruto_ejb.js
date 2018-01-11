@@ -10,10 +10,10 @@ function So_gId(s){
 var r = document.getElementById(s);
 return r;
 }
-function So_SetVal(i,s){
+function So_setVal(i,s){
 	document.getElementById(i).value = s;
 }
-function So_GetVal(i){
+function So_getVal(i){
 	var v = document.getElementById(i).value;
 	return v;
 }
@@ -36,6 +36,6 @@ return da;
 function So_sub(n){
 	eval("document."+ n +".submit();");
 }
-function So_Foc(i){
+function So_foc(i){
 	eval("document.getElementById(\""+i+"\").focus();");
 }
