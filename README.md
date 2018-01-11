@@ -6,7 +6,7 @@ You can build your script easy!! This is like jQuery.
 
 `<script src="soruto_ejb.js-min.js"></script>`
 
-2.使いたい関数を同封のfunc_list.htmlから探し、コーディングする  
+2.使いたい関数をhtmlフォルダ内にあるfunc_list.htmlから探し、コーディングする  
 
     <html><head>  
     <script src="soruto_ejb-min.js"></script>  
