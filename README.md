@@ -12,8 +12,8 @@ You can build your script easy!! This is like jQuery.
     <script src="soruto_ejb-min.js"></script>  
     <script>  
     window.onload = function(){  
-    al("Hello World");//alert()と同じようにアラートを出す関数  
-    getId("st").value = "Hello World!!";//getID() は getElementById()と同じことをする関数  
+    So_al("Hello World");//alert()と同じようにアラートを出す関数  
+    So_setVal("st","Hello World!!");//setVal()関数は指定されたidを持つ要素のvalue属性を変更する  
     }  
     </script></head><body>  
     <input type="text" id="st">  
