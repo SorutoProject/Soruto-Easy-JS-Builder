@@ -6,7 +6,7 @@
 function So_al(s){
 alert(s);
 }
-function So_gId(s){
+function So_getId(s){
 var r = document.getElementById(s);
 return r;
 }
@@ -17,7 +17,7 @@ function So_getVal(i){
 	var v = document.getElementById(i).value;
 	return v;
 }
-function So_cl(s){
+function So_col(s){
 	console.log(s);
 }
 function So_getDT(){
@@ -38,4 +38,14 @@ function So_sub(n){
 }
 function So_foc(i){
 	eval("document.getElementById(\""+i+"\").focus();");
+}
+function So_pMov(u){
+	location.href = u;
+}
+function So_pUrl(){
+	var d = location.href;
+	return d;
+}
+function So_setAtt(i,a,v){
+	eval("document.getElementById(\"" + i + "\")." + a + "=\"" + v + "\";")
 }
