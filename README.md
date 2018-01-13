@@ -17,4 +17,4 @@ You can build your script easy!! This is like jQuery.
     }  
     </script></head><body>  
     <input type="text" id="st">  
-    </body></html>`
+    </body></html>
