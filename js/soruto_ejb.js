@@ -49,3 +49,12 @@ function So_pUrl(){
 function So_setAtt(i,a,v){
 	eval("document.getElementById(\"" + i + "\")." + a + "=\"" + v + "\";")
 }
+function So_pRl(){
+	location.reload();
+}
+function So_pBk(){
+	history.back();
+}
+function So_pFw(){
+	history.forward();
+}
