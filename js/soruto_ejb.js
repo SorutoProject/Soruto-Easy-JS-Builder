@@ -1,4 +1,4 @@
-﻿/*Soruto Easy JS Builder 0.1 beta
+﻿/*Soruto Easy JS Builder 0.1.1 beta
 *caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
@@ -59,6 +59,6 @@ function So_pFw(){
 	history.forward();
 }
 function So_ver(){
-var v = "0.2 beta";
+var v = "0.1.1 beta";
 return v;
 }
