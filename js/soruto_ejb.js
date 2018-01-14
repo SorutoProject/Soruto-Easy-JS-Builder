@@ -1,5 +1,5 @@
-/*Soruto Easy JS Builder beta
-*caution:This script is beta version, so this script may have bugs.
+﻿/*Soruto Easy JS Builder 0.1 beta
+*caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
 */
