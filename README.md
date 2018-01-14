@@ -7,6 +7,7 @@ You can build your script easy!! This is like jQuery.
 `<script src="soruto_ejb.js-min.js"></script>`
 
 2.使いたい関数を[Wiki](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/wiki)から探し、コーディングする  
+
 例:
 
     <html><head>  
