@@ -58,3 +58,7 @@ function So_pBk(){
 function So_pFw(){
 	history.forward();
 }
+function So_ver(){
+var v = "0.2 beta";
+return v;
+}
