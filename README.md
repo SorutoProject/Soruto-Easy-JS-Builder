@@ -4,7 +4,7 @@ You can build your script easy!! This is like jQuery.
 ### 使い方
 1.普通にhtmlの`<head>`タグ内に`<script>`タグを使ってライブラリを読み込ませる
 
-`<script src="soruto_ejb.js-min.js"></script>`
+`<script src="soruto_ejb-min.js"></script>`
 
 2.使いたい関数を[Wiki](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/wiki)から探し、コーディングする  
 
