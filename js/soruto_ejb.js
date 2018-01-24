@@ -1,4 +1,4 @@
-﻿/*Soruto Easy JS Builder 0.1.1 beta
+﻿/*Soruto Easy JS Builder 0.2 beta
 *caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
@@ -59,7 +59,7 @@ function So_pFw(){
 	history.forward();
 }
 function So_ver(){
-var v = "0.1.1 beta";//Must change when update source.
+var v = "0.2 beta";//when you change the source code,you have to change the version number.
 return v;
 }
 function So_setImgUrl(i,u){
@@ -67,4 +67,17 @@ function So_setImgUrl(i,u){
 }
 function So_pMovR(u){
 	location.replace(u);
+}
+function So_getDTT(){
+var dm = new Date();
+var ye = dm.getFullYear();
+var mo = dm.getMonth() + 1;
+var date= dm.getDate();
+var ho = dm.getHours();
+var min = dm.getMinutes();
+var sec = dm.getSeconds();
+var day = dm.getDay();
+var dayen = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ][day] ;
+var dat = ye + "/" + mo + "/" + date + "(" + dayen + ") " +ho + ":" + min + ":" + sec;
+return dat;
 }
