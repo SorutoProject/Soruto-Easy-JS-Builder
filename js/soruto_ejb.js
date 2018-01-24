@@ -81,3 +81,6 @@ var dayen = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ][day] ;
 var dat = ye + "/" + mo + "/" + date + "(" + dayen + ") " +ho + ":" + min + ":" + sec;
 return dat;
 }
+function So_pTop(){
+	scrollTo(0,0);
+}
