@@ -1,7 +1,8 @@
 # Soruto-Easy-JS-Builder  
 ![Soruto EJB Logo](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/blob/master/img/SorutoEJBLogo.png?raw=true)  
 You can build your script easy!! This is like jQuery.  
-このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにするjQuery的なライブラリです。
+このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにする  
+jQueryライクなライブラリです。
 ### 使い方
 1.普通にhtmlの`<head>`タグ内に`<script>`タグを使ってライブラリを読み込ませる
 
