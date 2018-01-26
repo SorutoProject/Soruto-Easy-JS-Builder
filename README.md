@@ -1,4 +1,5 @@
-# Soruto-Easy-JS-Builder
+# Soruto-Easy-JS-Builder  
+![Soruto EJB Logo](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/blob/master/img/SorutoEJBLogo.png?raw=true)
 You can build your script easy!! This is like jQuery.  
 このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにするjQuery的なライブラリです。
 ### 使い方
