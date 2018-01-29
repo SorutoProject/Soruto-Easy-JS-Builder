@@ -1,26 +1,33 @@
-﻿/*Soruto Easy JS Builder 0.2 beta
+﻿/*Soruto Easy JS Builder 0.3 beta
 *caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
 */
-function So_al(s){
+var so = new Object;//make so object
+//Soruto EJB alert
+so.al = function(s){
 alert(s);
 }
-function So_getId(s){
+//Soruto EJB getId
+so.getId = function(s){
 var r = document.getElementById(s);
 return r;
 }
-function So_setVal(i,s){
+//Soruto EJB set value
+so.setVal = function(i,s){
 	document.getElementById(i).value = s;
 }
-function So_getVal(i){
+//Soruto EJB get value
+so.getVal = function(i){
 	var v = document.getElementById(i).value;
 	return v;
 }
-function So_col(s){
+//Soruto EJB console log
+so.coL = function(s){
 	console.log(s);
 }
-function So_getDT(){
+//Soruto EJB get the Date and the Time
+so.getDT = function(){
 var dm = new Date();
 var ye = dm.getFullYear();
 var mo = dm.getMonth() + 1;
@@ -33,42 +40,50 @@ var dat = ye + " " + mo + " " + date + " " + ho + " " + min + " " + sec + " " + 
 var da = dat.split(" ");
 return da;
 }
-function So_sub(n){
+//Soruto EJB submit
+so.sub = function(n){
 	eval("document."+ n +".submit();");
 }
-function So_foc(i){
+//Soruto EJB focus
+so.foc = function(i){
 	eval("document.getElementById(\""+i+"\").focus();");
 }
-function So_pMov(u){
+//Soruto EJB page move
+so.pMov = function(u){
 	location.href = u;
 }
-function So_pUrl(){
+//Soruto EJB page url
+so.pUrl = function(){
 	var d = location.href;
 	return d;
 }
-function So_setAtt(i,a,v){
-	eval("document.getElementById(\"" + i + "\")." + a + "=\"" + v + "\";")
-}
-function So_pRl(){
+//Soruto EJB page reload
+so.pRl = function(){
 	location.reload();
 }
-function So_pBk(){
+//Soruto EJB page back
+so.pBk = function(){
 	history.back();
 }
-function So_pFw(){
+//Soruto EJB page forward
+so.pFw = function(){
 	history.forward();
 }
-function So_ver(){
-var v = "0.2 beta";//when you change the source code,you have to change the version number.
+//Soruto EJB version
+so.ver = function(){
+var v = "0.3 beta";//when you change the source code,you have to change the version number.
 return v;
 }
-function So_setImgUrl(i,u){
+//Soruto EJB set Img Url
+so.setImgUrl = function(i,u){
 	document.getElementById(i).src = u;
 }
-function So_pMovR(u){
+//Soruto EJB page move replace
+so.pMovR = function(u){
 	location.replace(u);
 }
-function So_getDTT(){
+//Soruto EJB get the text of the Date and the Time 
+so.getDTT = function(){
 var dm = new Date();
 var ye = dm.getFullYear();
 var mo = dm.getMonth() + 1;
@@ -81,6 +96,19 @@ var dayen = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ][day] ;
 var dat = ye + "/" + mo + "/" + date + "(" + dayen + ") " +ho + ":" + min + ":" + sec;
 return dat;
 }
-function So_pTop(){
+//Soruto EJB page top
+so.pTop = function(){
 	scrollTo(0,0);
+}
+//Soruto EJB div innerHTML
+so.divIH = function(i,c){
+	document.getElementById(i).innerHTML = c;
+}
+//Soruto EJB div innerHTML place
+so.divIHP = function(i,c){
+	document.getElementById(i).innerHTML = document.getElementById(i).innerHTML + c;
+}
+//Soruto EJB div innerHTML top
+so.divIHT = function (i,c){
+	document.getElementById(i).innerHTML = c + document.getElementById(i).innerHTML;
 }
