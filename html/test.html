@@ -1,20 +1,27 @@
-<html><head><title>Soruto ESB test</title><meta charset="utf-8">
+<html><head><title>Soruto ESB test(For ver.0.3 or later)</title><meta charset="utf-8">
 <script src="../js/soruto_ejb.js"></script>
 <script>
 function run(){
-var sou = So_getVal("source");
-var logd = So_getId("log").innerHTML;
+var sou = so.getVal("source");
+var logd = so.getId("log").innerHTML;
 if(sou==""){
-So_getId("log").innerHTML="Error:ソースが入力されていません<br>" + logd;
+so.getId("log").innerHTML="Error:ソースが入力されていません<br>" + logd;
 }
 else{
 try{
 eval(sou);
 }catch(errrun){
-So_getId("log").innerHTML="Error Failed:" + errrun + "<br>" + logd;
+so.getId("log").innerHTML="Error Failed:" + errrun + "<br>" + logd;
 }
 }
 }
 </script>
+<script>
+var sot = new Object;
+sot.con = function(s){
+var logd = so.getId("log").innerHTML;
+so.getId("log").innerHTML="sot.con(): " + s + "<br>" + logd;
+}
+</script>
 </head>
-<body><style>body{background:#010101;color:#fefefe;font-family:meiryo;}textarea{width:100%;height:200px;font-size:10pt;background:#010101;color:#fefefe;font-family:'meiryo';}#log{border:solid 1px #fefefe;width:100%;height:200px;background:#4c4c4c;color:#fefefe;overflow:scroll;font-family:"meiryo";}</style><h2>Soruto ESB(通常版) 動作チェックページ</h2><p><input type="text" id="st"> id=st<br><input type="button" value="Click!!" id="but"> id=but</p><hr color="#4c4c4c"><p>Soruto ESB スクラッチパッド<br><input type="button" value="Run" onclick="run();"><br><textarea id="source" placeholder="JavaScriptやSoruto ESB関数を入力..." spellcheck="false"></textarea></p><div id="log">ここにエラーログが表示されます(So_col()関数で実行されたものは、ブラウザのコンソールに表示されます)</div></body></html>
+<body><style>body{background:#010101;color:#fefefe;font-family:meiryo;}textarea{width:100%;height:250px;font-size:10pt;background:#010101;color:#fefefe;font-family:'meiryo';}#log{border:solid 1px #fefefe;width:100%;height:200px;background:#4c4c4c;color:#fefefe;overflow:scroll;font-family:"meiryo";}</style><h2>Soruto ESB(通常版) 動作チェックページ(Ver.0.3以降対応版)</h2><p><input type="text" id="st"> id=st<br><input type="button" value="Click!!" id="but"> id=but</p><hr color="#4c4c4c"><p>Soruto ESB スクラッチパッド<br><input type="button" value="Run" onclick="run();"><br><textarea id="source" placeholder="JavaScriptやSoruto ESB関数を入力..." spellcheck="false"></textarea></p><div id="log"><br>ここにはログが表示されます<br>so.col()関数の結果は、ブラウザのコンソールに、<br>sot.con()関数の結果 (sot.con()関数は、テストページでのみ使用可能) はここに表示されます<br>(sot.con()関数は、so.col()関数と同じように使用します)</div></body></html>
