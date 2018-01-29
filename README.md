@@ -16,8 +16,8 @@ jQueryライクなライブラリです。
     <script src="soruto_ejb-min.js"></script>  
     <script>  
     window.onload = function(){  
-    So_al("Hello World");//alert()と同じようにアラートを出す関数  
-    So_setVal("st","Hello World!!");//setVal()関数は指定されたidを持つ要素のvalue属性を変更する  
+    so.al("Hello World");//alert()と同じようにアラートを出す関数  
+    so.setVal("st","Hello World!!");//so.setVal()関数は指定されたidを持つ要素のvalue属性を変更する  
     }  
     </script></head><body>  
     <input type="text" id="st">  
