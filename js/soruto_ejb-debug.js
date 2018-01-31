@@ -10,17 +10,26 @@ alert(s);
 }
 //Soruto EJB getId
 so.getId = function(s){
+if(document.getElementById(s)){
 var r = document.getElementById(s);
 return r;
-}
+}else{so.coEr("so.getId():Invalid id:\"" + i + "\".");}}
 //Soruto EJB set value
 so.setVal = function(i,s){
+	if(document.getElementById(i)){
 	document.getElementById(i).value = s;
+}else{
+	so.coEr("so.setVal():Invalid id:\"" + i + "\".");
+}
 }
 //Soruto EJB get value
 so.getVal = function(i){
+	if(document.getElementById(i)){
 	var v = document.getElementById(i).value;
 	return v;
+}else{
+	so.coEr("so.getVal():Invalid id:\"" + i + "\".");
+}
 }
 //Soruto EJB console log
 so.coL = function(s){
@@ -46,8 +55,9 @@ so.sub = function(n){
 }
 //Soruto EJB focus
 so.foc = function(i){
+	if(document.getElementById(i)){
 	eval("document.getElementById(\""+i+"\").focus();");
-}
+}else{so.coEr("so.foc():Invalid id:\"" + i + "\".");}}
 //Soruto EJB page move
 so.pMov = function(u){
 	location.href = u;
@@ -76,8 +86,9 @@ return v;
 }
 //Soruto EJB set Img Url
 so.setImgUrl = function(i,u){
+	if(document.getElementById(i)){
 	document.getElementById(i).src = u;
-}
+}else{so.coEr("so.setImgUrl():Invalid id:\"" + i + "\".");}}
 //Soruto EJB page move replace
 so.pMovR = function(u){
 	location.replace(u);
@@ -102,16 +113,19 @@ so.pTop = function(){
 }
 //Soruto EJB div innerHTML
 so.divIH = function(i,c){
+	if(document.getElementById(i)){
 	document.getElementById(i).innerHTML = c;
-}
+}else{so.coEr("so.divIH():Invalid id:\"" + i + "\".");}}
 //Soruto EJB div innerHTML place
 so.divIHP = function(i,c){
+	if(document.getElementById(i)){
 	document.getElementById(i).innerHTML = document.getElementById(i).innerHTML + c;
-}
+}else{so.coEr("so.divIHP():Invalid id:\"" + i + "\".");}}
 //Soruto EJB div innerHTML top
 so.divIHT = function (i,c){
+	if(document.getElementById(i)){
 	document.getElementById(i).innerHTML = c + document.getElementById(i).innerHTML;
-}
+}else{so.coEr("so.divIHT():Invalid id:\"" + i + "\".");}}
 //Added ver 0.4 beta
 //Soruto EJB Confirm
 so.cof = function(s){
