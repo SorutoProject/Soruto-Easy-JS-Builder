@@ -3,9 +3,16 @@
 You can build your script easy!! This is like jQuery.  
 このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにする  
 jQueryライクなライブラリです。  
-
-なお、本ライブラリは、MITライセンスの下で公開されています。LICENSE.txtをお読みください。  
+### ライセンス
+本ライブラリは、MITライセンスの下で公開されています。LICENSE.txtをお読みください。  
 (This software is released under the MIT License. Please see the LICENSE.txt.)
+
+MITライセンスを要約すると、以下のようになります:
+
+* 本ソフトウェアは誰でも自由に利用できます。ただし、著作権表示(`(C)2018 Soruto Project`)や  
+本許諾表示(LICENSE.txtをソースコードにコピペ)が必要です。
+
+* 本ソフトウェアの開発者は、本ソフトウェアの利用について、一切の責任を負いません。
 
 ### 使い方
 1.普通にhtmlの`<head>`タグ内に`<script>`タグを使ってライブラリを読み込ませる
