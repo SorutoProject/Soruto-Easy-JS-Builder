@@ -4,7 +4,7 @@ You can build your script easy!! This is like jQuery.
 このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにする  
 jQueryライクなライブラリです。  
 
-なお、本ライブラリは、MITライセンスの元で公開されています。LICENSE.txtをお読みください。  
+なお、本ライブラリは、MITライセンスの下で公開されています。LICENSE.txtをお読みください。  
 (This software is released under the MIT License. Please see the LICENSE.txt.)
 
 ### 使い方
