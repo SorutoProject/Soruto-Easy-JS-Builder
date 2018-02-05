@@ -1,5 +1,5 @@
 # Soruto-Easy-JS-Builder  
-<img src="https://github.com/SorutoProject/Soruto-Easy-JS-Builder/blob/master/img/SorutoEJBLogo.png?raw=true" width="350px" title="Logo"></img>  
+<img src="https://github.com/SorutoProject/Soruto-Easy-JS-Builder/blob/master/img/SorutoEJBLogo2.png?raw=true" width="350px" title="Logo"></img>  
 You can build your script easy!! This is like jQuery.  
 このスクリプトはJavaScriptでよく使うのに色々面倒いgetElementById()とかを簡単にかけるようにする  
 jQueryライクなライブラリです。  
