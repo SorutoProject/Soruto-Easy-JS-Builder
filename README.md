@@ -41,3 +41,5 @@ MITライセンスを要約すると、以下のようになります:
     </script></head><body>  
     <input type="text" id="st">  
     </body></html>
+    
+(C)2018 Soruto Project
