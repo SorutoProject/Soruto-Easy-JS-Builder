@@ -250,7 +250,7 @@ so.modal.custom = function(s){
 	pob.style.color = "#000";
 	modiv.appendChild(pob);
 }
-so.modal.cofPMov = function(t,s,u){
+so.modal.conPMov = function(t,s,u){
 //get so-modal div.
     var modiv = document.getElementById("so-modal");
 	//set modiv
