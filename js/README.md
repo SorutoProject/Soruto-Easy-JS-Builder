@@ -3,7 +3,6 @@
 
 soruto_ejb.js  
 soruto_ejb-min.js  
-soruto_ejb-debug.js
 
 ## 各ファイルの説明
 
@@ -14,8 +13,3 @@ soruto_ejb-debug.js
 **soruto_ejb-min.js** :  
 コードの実行には不必要な、コメント、改行などが削除され、ファイルサイズが最も小さいです。  
 サイトで使用する場合は、このファイルをご利用ください。
-
-**soruto_ejb-debug.js** :  
-Soruto EJB向けにプログラムされたコードをデバッグする際に使用します。  
-上記の2つのファイルでソースを実行時、うまく動かないときは、本ファイルに差し替え、  
-ブラウザコンソールに表示されたエラーを確認し、[こちら](https://github.com/SorutoProject/Soruto-Easy-JS-Builder/wiki/%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E3%82%A8%E3%83%A9%E3%83%BC%E4%B8%80%E8%A6%A7)のページをご覧ください。
