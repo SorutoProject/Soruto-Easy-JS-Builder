@@ -1,4 +1,4 @@
-﻿/*Soruto Easy JS Builder 0.4 beta
+﻿/*Soruto Easy JS Builder 0.4.1 beta
 *caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
@@ -157,7 +157,7 @@ so.modal.al = function(t,s){
 	//set modiv
 	modiv.style.display = "block";
 	modiv.style.background = "rgba(193,193,193,0.7)";
-	modiv.style.position = "absolute";
+	modiv.style.position = "fixed";
 	modiv.style.top=0;
 	modiv.style.right=0;
 	modiv.style.left=0;
@@ -184,6 +184,7 @@ so.modal.al = function(t,s){
 	modiv.appendChild(pob);
 	//focus move to the close button
 	document.getElementById("sorutoejbmodalclose").focus();
+	so.pTop();
 }
 //Soruto EJB modal message
 so.modal.ms = function(t,s){
@@ -192,7 +193,7 @@ so.modal.ms = function(t,s){
 	//set modiv
 	modiv.style.display = "block";
 	modiv.style.background = "rgba(193,193,193,0.7)";
-	modiv.style.position = "absolute";
+	modiv.style.position = "fixed";
 	modiv.style.top=0;
 	modiv.style.right=0;
 	modiv.style.left=0;
@@ -217,6 +218,7 @@ so.modal.ms = function(t,s){
 	pob.style.boxShadow = "0px 0px 10px";
 	pob.style.color = "#000";
 	modiv.appendChild(pob);
+	so.pTop();
 }
 so.modal.custom = function(s){
 		//get so-modal div.
@@ -224,7 +226,7 @@ so.modal.custom = function(s){
 	//set modiv
 	modiv.style.display = "block";
 	modiv.style.background = "rgba(193,193,193,0.7)";
-	modiv.style.position = "absolute";
+	modiv.style.position = "fixed";
 	modiv.style.top=0;
 	modiv.style.right=0;
 	modiv.style.left=0;
@@ -249,6 +251,7 @@ so.modal.custom = function(s){
 	pob.style.boxShadow = "0px 0px 10px";
 	pob.style.color = "#000";
 	modiv.appendChild(pob);
+	so.pTop();
 }
 so.modal.cofPMov = function(t,s,u){
 //get so-modal div.
@@ -256,7 +259,7 @@ so.modal.cofPMov = function(t,s,u){
 	//set modiv
 	modiv.style.display = "block";
 	modiv.style.background = "rgba(193,193,193,0.7)";
-	modiv.style.position = "absolute";
+	modiv.style.position = "fixed";
 	modiv.style.top=0;
 	modiv.style.right=0;
 	modiv.style.left=0;
@@ -282,6 +285,7 @@ so.modal.cofPMov = function(t,s,u){
 	pob.style.color = "#000";
 	
 	modiv.appendChild(pob);
+	so.pTop();
 }
 
 so.modal.close = function(){
