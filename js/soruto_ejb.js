@@ -1,4 +1,4 @@
-﻿/*Soruto Easy JS Builder 0.4.1 beta
+﻿/*Soruto Easy JS Builder 0.4.2 beta
 *caution:This script is beta version, so this script may have bugs and useless.
 *Please understand it.
 *(C)2018 Soruto Project.
@@ -219,6 +219,7 @@ so.modal.ms = function(t,s){
 	pob.style.color = "#000";
 	modiv.appendChild(pob);
 	so.pTop();
+	modiv.focus();
 }
 so.modal.custom = function(s){
 		//get so-modal div.
@@ -252,6 +253,7 @@ so.modal.custom = function(s){
 	pob.style.color = "#000";
 	modiv.appendChild(pob);
 	so.pTop();
+    modiv.focus();
 }
 so.modal.cofPMov = function(t,s,u){
 //get so-modal div.
@@ -286,8 +288,58 @@ so.modal.cofPMov = function(t,s,u){
 	
 	modiv.appendChild(pob);
 	so.pTop();
+	modiv.focus();
 }
-
+so.modal.cofRS = function(t,s,f){
+//get so-modal div.
+    var modiv = document.getElementById("so-modal");
+	//set modiv
+	modiv.style.display = "block";
+	modiv.style.background = "rgba(193,193,193,0.7)";
+	modiv.style.position = "fixed";
+	modiv.style.top=0;
+	modiv.style.right=0;
+	modiv.style.left=0;
+	modiv.style.bottom=0;
+	modiv.style.margin = "auto";
+	modiv.style.cursor = "default";
+	//create a div
+	var pob = document.createElement("div");
+	pob.style.display = "block";
+	pob.innerHTML = "<b><center>" + t + '</center></b><hr color="#bababa">' + s + '<br><center><hr color="#bababa"><input type="button" value="Yes" onclick="so.pMov(\'' + u + '\');so.modal.close();" style="width:64px;height:27px;">&nbsp;<input type="button" value="No" onclick="so.modal.close();" style="width:64px;height:27px;"></center>';
+	//set the div
+	pob.style.position = "absolute";
+	pob.style.top=0;
+	pob.style.right=0;
+	pob.style.left=0;
+	pob.style.bottom=0;
+	pob.style.margin = "auto";
+    pob.style.width="300px";
+	pob.style.height="200px";
+	pob.style.background = "#fff";
+	pob.style.overflow = "auto";
+	pob.style.boxShadow = "0px 0px 10px";
+	pob.style.color = "#000";
+	
+	modiv.appendChild(pob);
+	so.pTop();
+	modiv.focus();
+}
+so.modal.fs = function(s,bc){
+//get so-modal div.
+    var modiv = document.getElementById("so-modal");
+	//set modiv
+	modiv.style.display = "block";
+	modiv.style.background = bc;
+	modiv.style.position = "fixed";
+	modiv.style.top=0;
+	modiv.style.right=0;
+	modiv.style.left=0;
+	modiv.style.bottom=0;
+	modiv.style.margin = "auto";
+	modiv.style.cursor = "default";
+	modiv.innerHTML = s;
+}
 so.modal.close = function(){
 	var parent = so.getId("so-modal");
 	parent.style.display = "none";
